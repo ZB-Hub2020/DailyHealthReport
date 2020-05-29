@@ -4,8 +4,8 @@ on:
   push:
     branches: 
       - master
-  schedule:
-    - cron: "58 4 * * *"
+#  schedule:
+#    - cron: "58 4 * * *"
 
 jobs:
   build:
@@ -16,9 +16,9 @@ jobs:
       uses: fifsky/wechat-work-action@v0.0.1
       with:
         # wechat work robot webhook
-        url:  https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=4e40e63c-e099-43f2-8097-a4157c007989
+#        url:  https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=4e40e63c-e099-43f2-8097-a4157c007989
         # message type
         type: text # optional, default is text
         # message content
         at: all
-        content: "各位小伙伴，请记得完成今日健康打卡！\n >状态跟踪表-电气工程部-控制及自动化部.xlsx \n >https://kdocs.cn/l/sEX3ZPvDm?f=501"
+#        content: "各位小伙伴，请记得完成今日健康打卡！\n >状态跟踪表-电气工程部-控制及自动化部.xlsx \n >https://kdocs.cn/l/sEX3ZPvDm?f=501"
